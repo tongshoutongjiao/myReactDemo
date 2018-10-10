@@ -12,9 +12,9 @@ import './style/base.css';
 FastClick.attach(document.body);
 
 // 监听state变化
-// store.subscribe(() => {
-//   console.log('store发生了变化');
-// });
+store.subscribe(() => {
+  console.log('store发生了变化');
+});
 
 const render = Component => {
   ReactDOM.render(
@@ -33,7 +33,7 @@ render(Route);
 // Webpack Hot Module Replacement API
 if (module.hot) {
   module.hot.accept('./router/', () => {
-    render(Route);
+     render(Route);
   })
 }
 

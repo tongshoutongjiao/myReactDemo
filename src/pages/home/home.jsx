@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+ import { connect } from 'react-redux';
 import { is, fromJS } from 'immutable';
 import PropTypes from 'prop-types';
 import API from '@/api/api';
@@ -22,6 +21,8 @@ class Home extends Component {
     clearData: PropTypes.func.isRequired,
     clearSelected: PropTypes.func.isRequired,
   }
+
+
 
   state = {
     alertStatus: false, //弹框状态
